@@ -13,5 +13,7 @@ Se la lista e' vuota, consideratela come `listOf(0)`.
 #### Esempi
 
 `oddOrEven(listOf(0))` ➡️ "pari"
+
 `oddOrEven(listOf(2, 5, 34, 6))` ➡️ "dispari"
+
 `oddOrEven(listOf(0, -1, -5))` ➡️ "pari"
