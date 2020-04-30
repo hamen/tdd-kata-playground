@@ -13,7 +13,7 @@ fun leapYear(year: Int): Boolean {
 fun addInt(numbers: String): Int? {
     return if (numbers.isBlank()) 0
     else {
-        return numbers.split(Regex("(,+)|(;+)"))
+        return numbers.split(Regex("(,+)|(;+)|(\n)"))
             .mapNotNull { it.toIntOrNull() }
             .sum()
     }

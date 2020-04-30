@@ -68,4 +68,61 @@ class StringCalculatorTest {
         val output = addInt(input)
         assertThat(output).isEqualTo(5)
     }
+
+
+    @Test
+    fun `String of EOL separated numbers returns Int`() {
+        val input = "5\na"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(5)
+    }
+
+    @Test
+    fun `String of EOL separated char and numbers returns Int`() {
+        val input = "z\n3"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(3)
+    }
+
+    @Test
+    fun `String of 3 semicolon separated numbers returns Int`() {
+        val input = "5;7;3"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(15)
+    }
+
+    @Test
+    fun `String of 3 comma separated numbers returns Int`() {
+        val input = "5,7,3"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(15)
+    }
+
+    @Test
+    fun `String of 3 comma and semicolon separated numbers returns Int`() {
+        val input = "5,7;3"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(15)
+    }
+
+    @Test
+    fun `String of 3 comma separated char and numbers returns Int`() {
+        val input = "y,a,3"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(3)
+    }
+
+    @Test
+    fun `String of 3 comma separated chars returns 0`() {
+        val input = "l, o, l"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(0)
+    }
+
+    @Test
+    fun `String of 3 semicolon separated chars returns 0`() {
+        val input = "l; o; l"
+        val output = addInt(input)
+        assertThat(output).isEqualTo(0)
+    }
 }
