@@ -13,4 +13,6 @@ class Test1 {
     fun testDivide() {
         assertThrows(ArithmeticException::class.java) { Integer.divideUnsigned(42, 0) }
     }
+
+
 }
