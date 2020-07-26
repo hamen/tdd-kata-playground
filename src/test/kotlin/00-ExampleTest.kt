@@ -3,7 +3,7 @@ import assertk.assertions.isEqualTo
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
 
-class ExampleTest {
+class `00-ExampleTest` {
 
     /**
      * Assert equality

@@ -1,19 +1,13 @@
 # TDD KATA PLAYGROUND
 
-## Esercizi
+# Exercises overview
 
-### Pari o dispari - Even or odd
+Look at the `/test` folder to find the execise collection. 
 
-Data una lista di numeri, determinare se la somma di tutti i numeri contenuti nella lista sia pari o dispari.
 
-Il risultato deve essere una delle due stringhe: `pari` o `dispari`.
+### Exercises sources
 
-Se la lista e' vuota, consideratela come `listOf(0)`.
+https://www.programmingwithwolfgang.com/tdd-kata/ 
 
-#### Esempi
+https://kata-log.rocks/tdd
 
-`oddOrEven(listOf(0))` ➡️ "pari"
-
-`oddOrEven(listOf(2, 5, 34, 6))` ➡️ "dispari"
-
-`oddOrEven(listOf(0, -1, -5))` ➡️ "pari"
